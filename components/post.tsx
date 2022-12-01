@@ -10,7 +10,7 @@ export default function Post(props: PostProps) {
   return (
 	<article>
 	  <h1>{post.title()}</h1>
-	  <div dangerouslySetInnerHTML={{ __html: post.content() }} />
+	  <div dangerouslySetInnerHTML={{ __html: post.content() || '' }} />
 	</article>
   );
 }
